@@ -3,43 +3,56 @@
   <head>   
     <title>Web App</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"> 
-    <link href="calc.css" rel="stylesheet" type="text/css"> 
-   
+    <link href="calc.css" rel="stylesheet" type="text/css">  
+    <script src="calc.js"></script>  
   </head>
-  <header>
-      <div class="jumbotron text-center">
-          <h1>Birth date Calculator</h1>
-          <p>Know your name in Akan</p> 
-        </div>
-          
-  </header>
-      
-    <body>
-      <div id="main_container">
-        <div id="row">
 
-            
-                    
-                        <div id="birth_date_input">Birth Date*: <input type="date" id="birth_date"></div>
-                        <br/>
-                        <div id="calculate">Calculate your age**</div>
-                        
-                        <div id="age_container"><span id="exact_age">Age</span></div>
-                        <p><em>* The year here is 365 days and the month here is 30 days, that means your birthday may not mean you will be 0 days old.</br>  
-                        **Don't worry I will not share your input.</em></p>
-                        </p>
-                    
-               
-             
-           
-         
-              
-          
-        </div>
-     
+    <body>
+      <div class = "container">
+      <div class = "jumbotron"> 
+        <h1> Age Webapp  </h1>
+        <p> Calculating your Born day to Ghanaian Akan Names</p>
+
       </div>
-      <div class="footer">
-          <p>Footer</p>
-        </div>>
-    </body>
+      </div>
+
+      <div id="main_container">
+      <div class="form">
+            
+        <form name="birthday" id="birthday">
+            
+            Please enter your birthday:
+            <br/> <input type="date" name="dob" id="dob"> 
+            <br/>
+            <br/>Please enter your gender: 
+            <br/>	
+            <select name="gender" id="gender">
+              <option value="">select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            </p>
+            <br/>
+            <input type="button" value="Get my Akan name" onclick="calculateAkanName()">
+            
+            </form>
+            </div>
+
+                  <br/>
+      
+                  
+            <p><em>* Interesting! Do  you know your Akan Name Now?*</em>
+            </div>
+
+          
+                                   
+    <footer>
+        © Copyright 2019, All Rights Reserved
+     </footer>
+              </div>
+           
+              
+          </body>
+          </div>
+
 </Html>
